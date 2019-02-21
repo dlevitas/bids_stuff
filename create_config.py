@@ -14,10 +14,11 @@ from sys import argv
 import numpy as np
 
 
-dicom_dir=str(argv[1])
-config_file_dir=str(argv[2])
-bold_vols=int(argv[3])
-task=str(argv[4])
+subj=int(argv[1])
+dicom_dir=str(argv[2])
+config_file_dir=str(argv[3])
+bold_vols=int(argv[4])
+task=str(argv[5])
 
 #Begin
 try:
@@ -137,5 +138,5 @@ for i in range(len(data_types)):
         
         
 #Copy dictionary to .json file
-with open('%s/config_%s.json' %(config_file_dir,task), 'w') as fp:
+with open('%s/config_%s_%s.json' %(config_file_dir, s, task), 'w') as fp:
     json.dump(dic, fp, indent=3)
