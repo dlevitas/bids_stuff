@@ -14,7 +14,7 @@ from sys import argv
 import numpy as np
 
 
-subj=int(argv[1])
+subj=str(argv[1])
 dicom_dir=str(argv[2])
 config_file_dir=str(argv[3])
 bold_vols=int(argv[4])
