@@ -138,5 +138,5 @@ for i in range(len(data_types)):
         
         
 #Copy dictionary to .json file
-with open('%s/config_%s_%s.json' %(config_file_dir, s, task), 'w') as fp:
+with open('%s/config_%s_%s.json' %(config_file_dir, subj, task), 'w') as fp:
     json.dump(dic, fp, indent=3)
