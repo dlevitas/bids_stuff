@@ -17,7 +17,7 @@ import numpy as np
 subj=str(argv[1])
 dicom_dir=str(argv[2])
 config_file_dir=str(argv[3])
-task=str(argv[5])
+task=str(argv[4])
 
 
 #Begin
