@@ -97,7 +97,7 @@ for j in range(len(descriptions)):
         if any(x in descriptions[j] for x in ['SBRef']):
             sbref_count+=1
             data_types.append("func")
-            modality_labels.append("bold")
+            modality_labels.append("sbref")
             custom_labels.append("task-{}".format(task))
         else:
             bold_count+=1
