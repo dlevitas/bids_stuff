@@ -98,7 +98,7 @@ for j in range(len(descriptions)):
             sbref_count+=1
             data_types.append("func")
             modality_labels.append("bold")
-            custom_labels.append("task-{}_sbref".format(task))
+            custom_labels.append("task-{}".format(task))
         else:
             bold_count+=1
             data_types.append("func")
