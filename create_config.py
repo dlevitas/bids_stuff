@@ -93,12 +93,6 @@ for j in range(len(descriptions)):
                 modality_labels.append("epi")
                 custom_labels.append('')
                 
-    elif any(x in descriptions[j] for x in ['SBRef']):
-        sbref_count+=1
-        data_types.append("func")
-        modality_labels.append("bold")
-        custom_labels.append("task-{}_sbref".format(task))
-            
     elif any(x in descriptions[j] for x in ['bold_task','bold_rest', 'bold']):
         if any(x in descriptions[j] for x in ['SBRef']):
             sbref_count+=1
